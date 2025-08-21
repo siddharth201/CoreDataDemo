@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     }
     
     func fetchEmployee() {
+        //Path of SQLite file
         let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.path ?? ""
         print(path)
         let fetchRequest: NSFetchRequest<Employee> = Employee.fetchRequest()
